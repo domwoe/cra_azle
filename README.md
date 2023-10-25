@@ -45,3 +45,10 @@ Assuming you have [created a cycles wallet](https://internetcomputer.org/docs/cu
 ```bash
 npm run canister_deploy_mainnet
 ```
+
+To run the frontend locally
+
+```bash
+npm run start
+```
+
