@@ -1,0 +1,21 @@
+{
+    "canisters": {
+        "azle_hello_world": {
+            "type": "custom",
+            "build": "npx azle azle_hello_world",
+            "root": "backend",
+            "ts": "backend/index.ts",
+            "candid": "backend/index.did",
+            "wasm": ".azle/azle_hello_world/azle_hello_world.wasm.gz"
+        },
+        "frontend": {
+            "dependencies": ["azle_hello_world"],
+            "type": "assets",
+            "frontend": {
+                "entrypoint": "build/index.html"
+            },
+            "source": ["build/"]
+        }
+    }
+}
+
